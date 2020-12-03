@@ -9,7 +9,7 @@ terraform {
   }
 
   backend "remote" {
-    organization = "REPLACE_ME"
+    organization = "kohan"
 
     workspaces {
       name = "gh-actions-demo"
@@ -18,7 +18,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = "eu-central-1"
 }
 
 provider "random" {}
